@@ -41,12 +41,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
-                $mail->Username = 'dzamarfawwaz10@gmail.com'; // Ganti dengan email Anda
-                $mail->Password = 'nqlp dsdh wkbz jdnu'; // Ganti dengan App Password Gmail
+                $mail->Username = 'yahoo@gmail.com'; // Ganti dengan email Anda
+                $mail->Password = 'isi App Password pribadi'; // Ganti dengan App Password Gmail
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                 $mail->Port = 587;
 
-                $mail->setFrom('dzamarfawwaz10@gmail.com');
+                $mail->setFrom('yahoo@gmail.com'); // Ganti dengan email Anda
                 $mail->addAddress($user['email']);
                 $mail->isHTML(true);
                 $mail->Subject = 'OTP Login Anda';
